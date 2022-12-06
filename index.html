@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__container">
+				<div class="section-items section-absolute">
+					<div class="items">
+						<div class="items__item items__item--bg-red">block 1</div>
+						<div class="items__item items__item--bg-green">block 2</div>
+						<div class="items__item items__item--bg-blue items__item--absolute">block 3</div>
+					</div>
+					<p>Позиціювання - "absolute" - Об'єкт позіціонується відносно першого батьківського елементу,
+						position якого відмінний від static.(Прийшлось додати до "page__container" позиціювання -"relativе",
+						щоб мій перший блок не "гуляв" по всьому світі! </p>
+				</div>
+				<div class="section-items section-relative">
+					<div class="items">
+						<div class="items__item items__item--bg-red items__item--relative">block 1</div>
+						<div class="items__item items__item--bg-green">block 2</div>
+						<div class="items__item items__item--bg-blue">block 3</div>
+					</div>
+					<p>Перший блок вирішив піти пройтись трошки, але за собою місце він лишив, щоб повернутись!</p>
+				</div>
+				<div class="section-items section-static">
+					<div class="items">
+						<div class="items__item items__item--bg-red">block 1</div>
+						<div class="items__item items__item--bg-green items__item--static">block 2</div>
+						<div class="items__item items__item--bg-blue">block 3</div>
+					</div>
+					<p>Можливо, блок 2 хотів би теж десь "пройтись", але його доля така, що він має лишитись на своєму місці,
+						тому що він за замовченням - "static"</p>
+				</div>
+				<div class="section-items section-fixed">
+					<div class="items">
+						<div class="items__item items__item--bg-red">block 1</div>
+						<div class="items__item items__item--bg-green items__item--fixed">block 2</div>
+						<div class="items__item items__item--bg-blue">block 3</div>
+					</div>
+					<p>Блок 2 вирішив бути сам по собі... Навіть міісце своє звільнив, сказав не повернеться.</p>
+				</div>
+				<div class="section-items section-sticky">
+					<div class="items">
+						<div class="items__item items__item--bg-red">block 1</div>
+						<div class="items__item items__item--bg-green items__item--sticky">block 2</div>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda incidunt enim labore laboriosam
+							culpa ex quae est in nesciunt suscipit, obcaecati magnam mollitia laudantium, nihil debitis veniam
+							velit officia vitae?
+							Vel omnis repudiandae id, nesciunt facere esse consectetur dicta temporibus quo aliquid enim
+							laboriosam necessitatibus perferendis autem tempora alias dolorum ex eius non voluptas. Reiciendis,
+							laborum recusandae. Nobis, exercitationem iure?
+							Et sequi iste, corrupti impedit blanditiis natus sed qui dignissimos aut nemo enim, obcaecati
+							error. Dolores et iure quae itaque exercitationem fuga quod. Rerum ea asperiores quaerat labore
+							quibusdam nihil.
+							Alias dicta nostrum obcaecati hic vitae reiciendis laudantium dolore ab fugit dolor aut
+							voluptatibus placeat similique quod sint molestias id ipsam possimus doloribus aliquam, rerum
+							recusandae ducimus corrupti? Similique, quaerat.
+							Minima voluptatibus deserunt ratione unde alias ab cupiditate ducimus deleniti inventore ipsa
+							eligendi amet qui iste voluptatum, possimus, itaque perferendis quos laborum labore quam quaerat
+							fuga nemo ipsum? Officia, ullam.
+							Accusantium, quae adipisci. Illo dolores libero quis doloremque nesciunt voluptatem modi voluptatum
+							excepturi, tempore itaque facere, beatae mollitia voluptas porro maxime magni possimus, minus
+							tenetur! Commodi odio eligendi adipisci dolores?
+							Beatae nemo officiis consequuntur! Doloribus incidunt aut assumenda ipsa error recusandae
+							laboriosam totam! Magnam, architecto minus harum rem minima rerum perspiciatis accusamus hic enim
+							nostrum. Nam ducimus id dignissimos nisi.</p>
+						<div class="items__item items__item--bg-blue">block 3</div>
+					</div>
+					<p>Нажаль, не буде працювати, тому що я не буду ставити батьківському елементу overflow: visible</p>
+				</div>
+				<div class="section-items section-relativ-z">
+					<div class="items">
+						<div class="items__item items__item--bg-red items__item--relative-z">block 1</div>
+						<div class="items__item items__item--bg-green">block 2</div>
+						<div class="items__item items__item--bg-blue">block 3</div>
+					</div>
+					<p>Блок 1 вирішив, що він самий головний, звісно, можна мінусонути його чере z-index:-1;, але вже нехай
+						порадіє.</p>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="hw2">
+					<div class="car">
+						<div class="car__image">
+							<img class="car__black" src="img/image_black-car.png" alt="black">
+							<img class="car__red" src="img/image_red-car.png" alt="red">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
